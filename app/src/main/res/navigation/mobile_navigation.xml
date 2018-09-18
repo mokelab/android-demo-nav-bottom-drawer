@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/mobile_navigation"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.mokelab.navbottomdrawer.SplashFragment"
+        android:label="SplashFragment">
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@+id/splashFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.mokelab.navbottomdrawer.HomeFragment"
+        android:label="HomeFragment"/>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.mokelab.navbottomdrawer.SearchFragment"
+        android:label="SearchFragment"/>
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.mokelab.navbottomdrawer.HelpFragment"
+        android:label="HelpFragment"/>
+</navigation>
